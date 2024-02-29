@@ -13,8 +13,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      safelist: ['animate-[fade-in_1s_ease-in-out]', 'animate-[fade-in-down_1s_ease-in-out]']
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-animatecss')
+  ],
 };
 export default config;
